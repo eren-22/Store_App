@@ -1,0 +1,20 @@
+﻿@page
+
+<div class="text-center my-5">
+	<h6 class="display-6">
+		THANKS
+		<i class="fa-regular fa-face-smile"></i>
+	</h6>
+	<p>Thanks for placing order. #@OrderId</p>
+	<p>We'll deliver your order as soon as possible.</p>
+	<a class="btn btn-primary" asp-controller="Home" asp-action="Index">
+		<i class="fa-solid fa-house"></i>
+		Return to store
+	</a>
+</div>
+
+@functions
+{
+	[BindProperty(SupportsGet = true)]
+	public String? OrderId { get; set; }
+}
